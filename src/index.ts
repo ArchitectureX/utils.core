@@ -1,7 +1,7 @@
 const core = {
   formData: {
-    get(formData: FormData): Record<string, FormDataEntryValue> {
-      const extractedData: Record<string, FormDataEntryValue> = {}
+    get(formData: FormData): Record<string, any> {
+      const extractedData: Record<string, any> = {}
 
       for (const [key, value] of formData.entries()) {
         extractedData[key] = value
